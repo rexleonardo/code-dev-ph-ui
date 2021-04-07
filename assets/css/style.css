@@ -1,0 +1,622 @@
+/* * {
+	outline: 1px solid violet;
+} */
+
+/* ========================= HTML ELEMENTS ========================= */
+
+body {
+	background-color: #f0f2f5;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	background-color: #737270;
+}
+
+h1 {
+	font-weight: 900;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+li {
+	margin: 0.625rem 0;
+}
+
+li > a {
+	display: inline-block;
+}
+
+hr {
+	color: white;
+	padding: 2px;
+}
+
+/* ========================= FOOTER ========================= */
+
+.footer-row1 {
+	padding: 3.125rem 0;
+}
+
+.footer-row1 > div {
+	padding-top: 3.125rem;
+}
+
+.footer-row2 {
+	padding: 3.125rem 0 6.25rem 0;
+}
+
+.list-title {
+	font-weight: 900;
+	font-size: 1.563rem;
+	color: white;
+}
+
+.app-buttons {
+	padding-left: 2rem;
+}
+
+.google-play-button {
+	height: 40px;
+	margin-top: 1.563rem;
+}
+
+.footer-copyright {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-copyright > h1 {
+	color: white;
+}
+
+.footer-copyright > span {
+	color: white;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons > a {
+	margin: 0.625rem;
+	max-height: 30px;
+}
+
+.social-icons > a > img {
+	max-width: 30px;
+	max-height: 30px;
+	filter: invert(100%);
+}
+
+/* ========================= INDEX - HEADER ========================= */
+
+.home-background {
+	background: center / cover no-repeat url(./../images/people.jpg);
+}
+
+.header-box {
+	display: flex;
+	justify-content: center;
+}
+
+.header-left-right {
+	max-width: 1440px;
+	width: 100%;
+}
+
+.header-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-slogan-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.563rem;
+}
+
+.title {
+	font-size: 4.688rem;
+	color: white;
+	text-shadow: 0.313rem 0.313rem 0.625rem black;
+}
+
+.slogan {
+	color: white;
+	text-shadow: 0.313rem 0.313rem 0.625rem black;
+	margin: 0;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-box {
+	background-color: rgb(0, 0, 0, 50%);
+	border-radius: 1.563rem;
+	padding: 3.125rem;
+	max-width: 25rem;
+	width: 100%;
+	margin: 3.125rem 0;
+}
+
+.email-box,
+.password-box {
+	padding: 0.625rem 1.5rem;
+	margin-bottom: 1.563rem;
+	border-radius: 1.563rem;
+	background-color: rgb(255, 255, 255, 75%);
+}
+
+.login-button {
+	padding: 0.438rem 0;
+	border-radius: 1.563rem;
+	margin-bottom: 0.938rem;
+	width: 100%;
+	background-color: rgba(25, 135, 84, 75%);
+}
+
+.register-link {
+	display: flex;
+	justify-content: center;
+}
+
+/* ========================= INDEX - FEATURED COURSES ========================= */
+
+.featured-courses {
+	height: 17.188rem;
+	border-radius: 0.625rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 900;
+	text-align: center;
+	font-size: 2.5rem;
+	transition: 200ms;
+	color: white;
+}
+
+.featured-courses:hover {
+	transform: scale(1.1);
+	box-shadow: 3px 3px 5px #8c8c8c;
+}
+
+.featured-courses-margin > div {
+	margin: 1rem 0;
+}
+
+.frontend-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/frontend.jpg");
+}
+
+.backend-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/backend.jpg");
+}
+
+.full-stack-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/full-stack.jpg");
+}
+
+.mobile-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/mobile.jpg");
+}
+
+.game-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/game.jpg");
+}
+
+.data-science-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/data-science.jpg");
+}
+
+.devops-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/devops.jpg");
+}
+
+.software-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/software.jpg");
+}
+
+.web-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/web.jpg");
+}
+
+.security-photo {
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+		center / cover no-repeat url("./../images/security.jpg");
+}
+
+/* ========================= ERROR ========================= */
+
+.error-center {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.error-box {
+	background-color: black;
+	color: white;
+	border-radius: 1.563rem;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	padding: 1.563rem;
+	margin: 1.563rem;
+}
+
+.redirect-button {
+	padding: 0.438rem 1.875rem;
+	border-radius: 1.563rem;
+}
+
+/* ========================= REGISTER ========================= */
+
+.register-background {
+	padding: 1.563rem 0;
+	background: center / cover no-repeat
+		url("./../images/register-background.jpg");
+}
+
+.register-frame {
+	display: flex;
+	justify-content: center;
+}
+
+.register-box {
+	background-color: rgb(0, 0, 0, 50%);
+	border-radius: 1.563rem;
+	padding: 1.563rem;
+	width: 100%;
+	max-width: 25.938rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.register-title {
+	color: white;
+	text-align: center;
+	margin-bottom: 1.563rem;
+}
+
+.form-group > input {
+	padding: 0.625rem 1.5rem;
+	margin-bottom: 1.563rem;
+	border-radius: 1.563rem;
+	background-color: rgb(255, 255, 255, 75%);
+}
+
+.register-button {
+	border-radius: 1.563rem;
+	width: 100%;
+	background-color: rgba(25, 135, 84, 75%);
+	margin-bottom: 0.625rem;
+}
+
+.login-link {
+	text-align: center;
+}
+
+.register-picture-frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.register-picture {
+	background: center / cover no-repeat url("./../images/register-picture.jpg");
+	border-radius: 1.563rem;
+	width: 100%;
+	height: 100%;
+	box-shadow: 20px 20px 50px black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 3.125rem;
+}
+
+.register-picture-title {
+	font-size: 3.125rem;
+}
+
+.register-picture-title,
+.register-picture-slogan {
+	color: white;
+	text-shadow: 0.313rem 0.313rem 0.313rem black;
+}
+
+/* ========================= COURSES - USER ========================= */
+
+.courses-background-photo {
+	background: center / cover no-repeat url("./../images/keyboard.jpg");
+	height: 35vh;
+}
+
+.courses-title,
+.profile-title {
+	font-weight: 900;
+	text-align: center;
+	font-size: 4.688rem;
+	color: white;
+	text-shadow: 0.313rem 0.313rem 0.625rem black;
+}
+
+.features-background,
+.courses-background,
+.course-background,
+.profile-background,
+.add-course-background,
+.edit-course-background {
+	padding: 3.125rem 0 6.25rem 0;
+}
+
+.card {
+	transition: 200ms;
+	border-radius: 1.563rem;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 0.188rem 0.188rem 0.313rem #8c8c8c;
+}
+
+.card-body {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.card-title {
+	font-weight: 900;
+	text-align: center;
+}
+
+.card-text {
+	color: #737270;
+	text-align: center;
+}
+
+.price-view {
+	color: white;
+	font-weight: 900;
+	background-color: #dc3545;
+	padding: 0.125rem 0.938rem;
+	margin-bottom: 1rem;
+	border-radius: 1.563rem;
+}
+
+.view-course-button {
+	border-radius: 1.563rem;
+	display: flex;
+	justify-content: center;
+	font-weight: 900;
+}
+
+/* ========================= COURSES - ADMIN ========================= */
+
+.icons {
+	max-height: 1.563rem;
+	filter: invert(100%);
+}
+
+.add-course-button {
+	border-radius: 1.563rem;
+	font-weight: 900;
+}
+
+.add-course-button > img {
+	margin-right: 0.625rem;
+}
+
+.edit-course-button,
+.view-enrollees-button {
+	border-radius: 1.563rem;
+}
+
+/* ========================= COURSES - TOGGLE SWITCH ========================= */
+
+.form-switch.form-switch-lg .form-check-input {
+	cursor: pointer;
+	height: 2rem;
+	width: calc(3rem + 0.75rem);
+}
+
+.form-check-input {
+	background-color: red;
+	border-color: gray;
+	cursor: pointer;
+}
+
+.form-check-input:checked {
+	background-color: green;
+	border-color: gray;
+}
+
+.form-switch .form-check-input {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:focus {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+	border-color: gray;
+	box-shadow: 0 0 0 0.25rem rgb(128 128 128 / 25%);
+}
+
+.status {
+	padding: 7px 0 0 10px;
+}
+
+/* ========================= COURSE ========================= */
+
+#courseBackgroundPhoto {
+	width: 100%;
+}
+
+.go-back-button {
+	padding: 0.438rem 1.875rem;
+	margin: 1.563rem;
+	border-radius: 1.563rem;
+}
+
+.course-title {
+	color: white;
+	text-align: center;
+	padding-bottom: 3.125rem;
+	font-size: 4.688rem;
+	text-shadow: 0.313rem 0.313rem 0.625rem black;
+}
+
+#courseDesc {
+	background-color: white;
+	border-radius: 1.563rem;
+}
+
+.course-description-title {
+	margin: 1.563rem 0 1.563rem 0;
+}
+
+.course-description-content {
+	text-align: justify;
+}
+
+.course-price {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+}
+
+.enroll-button {
+	padding: 0.438rem 0;
+	border-radius: 1.563rem;
+	width: 100%;
+	margin-bottom: 1.563rem;
+}
+
+/* ========================= ADD & EDIT COURSE ========================= */
+
+.add-course-title,
+.edit-course-title {
+	margin-bottom: 1.563rem;
+}
+
+.create-course-button,
+.edit-course-button {
+	border-radius: 1.563rem;
+	font-weight: 900;
+}
+
+.form-group > label {
+	font-weight: 900;
+	margin: 0 0 0.313rem 0.625rem;
+}
+
+#description {
+	border-radius: 1.563rem;
+	margin-bottom: 1.563rem;
+	background-color: rgb(255, 255, 255, 75%);
+}
+
+#courseDescription {
+	border-radius: 1.563rem;
+	margin-bottom: 1.563rem;
+	background-color: rgb(255, 255, 255, 75%);
+}
+
+/* ========================= PROFILE ========================= */
+
+.profile-background-photo {
+	background: center / cover no-repeat url("./../images/desk.jpg");
+	height: 35vh;
+}
+
+.user-details {
+	background-color: rgba(0, 0, 0, 50%);
+	font-weight: 900;
+	color: white;
+	padding: 0.625rem;
+	border-radius: 1.563rem;
+	text-align: center;
+}
+
+.user-info-box {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.user-info-box > p {
+	padding: 0.625rem;
+	border-radius: 1.563rem;
+	background-color: white;
+	margin: 0.625rem;
+	border: 1px solid black;
+}
+
+.user-info {
+	font-weight: 900;
+}
+
+/* ========================= MEDIA QUERIES ========================= */
+
+@media (max-width: 991px) {
+	.title,
+	.courses-title,
+	.course-title,
+	.profile-title {
+		font-size: 2.688rem;
+	}
+
+	.form-box {
+		margin-top: 0;
+	}
+
+	.register-picture-frame {
+		display: none;
+	}
+
+	.course-description-price {
+		display: flex;
+		flex-flow: column-reverse;
+	}
+}
+
+@media (max-width: 375px) {
+	.form-box {
+		padding: 1.563rem;
+	}
+}

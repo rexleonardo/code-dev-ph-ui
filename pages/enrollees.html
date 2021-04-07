@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <!-- script.js -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./courses.html">CodeDev//PH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./courses.html">Courses</a>
+                    <a class="nav-link" href="./profile.html">Profile</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="./../index.html" class="nav-link">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <div id="profileContainer" class="row">
+            <div id="spinner" class="col-12">
+                <section class="text-center my-5">
+                    <h2 class="my-5">
+                        <span class="spinner-border"></span>
+                        Loading
+                    </h2>
+                </section>
+            </div>
+            <div class="col-12">
+                <section class="my-5">
+                    <div id="courseName" class="text-center">
+                        <!-- enrollees.js -->
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th> User ID </th>
+                                <th> Enrolled On </th>
+                            </tr>
+                        </thead>
+                        <tbody id="enrolleesDetails">
+                            <!-- profile.js -->
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./../assets/js/script.js"></script>
+    <script src="./../assets/js/enrollees.js"></script>
+</body>
+
+</html>
