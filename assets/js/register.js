@@ -49,7 +49,7 @@ registerForm.addEventListener("submit", e => {
 			// console.log(data);
 			if (data) {
 				alert("Registration Successful!");
-				window.location.replace("./../../index.html");
+				window.location.replace("./../index.html");
 			} else {
 				alert("Cannot Register");
 			}

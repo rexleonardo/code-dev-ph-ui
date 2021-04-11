@@ -1,17 +1,4 @@
-let head = document.querySelector("#head");
 let footer = document.querySelector("#footer");
-
-head.innerHTML = `
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeDev//PH</title>
-    <link rel="icon" href="./../assets/images/icons/coding.svg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./../assets/css/style.css">
-`;
 
 footer.innerHTML = `
     <div class="container">
@@ -58,7 +45,7 @@ footer.innerHTML = `
             <div class="col col-sm-6 col-lg-3 app-buttons">
                 <div><a href="https://www.apple.com/app-store" target="_blank"><img src="./../assets/images/icons/app-store.svg" alt="app store"
                             class="app-store-button"></a></div>
-                <div><a href="https:play.google.com" target="_blank"><img src="./../assets/images/icons/google-play.png" alt="google play"
+                <div><a href="https://play.google.com" target="_blank"><img src="./../assets/images/icons/google-play.png" alt="google play"
                             class="google-play-button"></a></div>
             </div>
         </div>
